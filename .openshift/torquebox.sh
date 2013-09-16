@@ -39,6 +39,7 @@ function torquebox_install() {
     rm torquebox-dist-*.zip
     ln -s torquebox-* torquebox
     echo "Installed" torquebox-*
+    gem update --system
     popd >/dev/null
 }
 

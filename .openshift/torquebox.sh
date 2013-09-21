@@ -21,7 +21,6 @@ fi
 export TORQUEBOX_HOME=$OPENSHIFT_DATA_DIR/torquebox
 export JRUBY_HOME=$TORQUEBOX_HOME/jruby
 export PATH=$JRUBY_HOME/bin:$PATH
-export JRUBY_OPTS="-J-Xmx512m -J-server -J-XX:+TieredCompilation -J-XX:+UseCodeCacheFlushing"
 # Insert the TorqueBox modules before the jbossas-7 ones
 export OPENSHIFT_JBOSSAS_MODULE_PATH=$TORQUEBOX_HOME/jboss/modules/system/layers/base:$TORQUEBOX_HOME/jboss/modules/system/layers/polyglot:$TORQUEBOX_HOME/jboss/modules/system/layers/torquebox
 
